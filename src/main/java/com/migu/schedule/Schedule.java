@@ -195,6 +195,9 @@ public class Schedule
                         list1.add(consumptions.get(i));
                         list1.add(consumptions.get(consumptions.size()));
                         list.add(list1);
+                        consumptions.remove(consumptions.size());
+                        consumptions.remove(i);
+                        break;
                     }
                 }
             }
